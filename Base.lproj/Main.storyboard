@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dvt-0x-3zO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--音乐-->
+        <scene sceneID="hw3-dZ-KKc">
+            <objects>
+                <tableViewController id="D35-2K-O3j" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="音乐" id="DgA-Io-o8l"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHY-PJ-W0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1417.5" y="1044.75"/>
+        </scene>
+        <!--股票-->
+        <scene sceneID="Lom-rO-U6x">
+            <objects>
+                <tableViewController id="chV-O6-oLL" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ATU-va-HTp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="52a-wh-Cxi">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="52a-wh-Cxi" id="3rO-uM-dfu">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="chV-O6-oLL" id="qkM-az-KE5"/>
+                            <outlet property="delegate" destination="chV-O6-oLL" id="Eez-pQ-Ycg"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="股票" id="l3B-2l-EtC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wek-qX-nQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721.5" y="1044.75"/>
+        </scene>
+        <!--朋友圈-->
+        <scene sceneID="Vxe-nJ-4V0">
+            <objects>
+                <tableViewController id="0iH-e9-N0A" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ue3-HK-Qci">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yNk-Ws-bG1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yNk-Ws-bG1" id="gNG-Qx-ypT">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0iH-e9-N0A" id="ojk-4J-LJh"/>
+                            <outlet property="delegate" destination="0iH-e9-N0A" id="nKq-YE-2n5"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="朋友圈" id="PgE-hm-4GW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ru-Bc-7zB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.5" y="310.5"/>
+        </scene>
+        <!--游戏-->
+        <scene sceneID="Bsa-0E-yvJ">
+            <objects>
+                <viewController id="AHu-H3-NMU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nfs-sr-NXQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="dTD-6U-Xss"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dWW-S4-3ow">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="游戏" id="9HN-6m-N06"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9d-dw-uUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-682.5" y="-345"/>
+        </scene>
+        <!--天气-->
+        <scene sceneID="U87-3x-aSX">
+            <objects>
+                <viewController id="rfS-nf-s2K" customClass="WeatherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ab4-s0-joQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="e53-t2-fKO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lws-6R-Cfg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="天气" id="KpP-o1-eA9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6z-Vm-16K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1417.5" y="-345"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="001-zf-gr2">
+            <objects>
+                <tabBarController id="dvt-0x-3zO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5ki-5I-aHP"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="94X-Et-L5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rfS-nf-s2K" kind="relationship" relationship="viewControllers" id="6vm-Hn-JGC"/>
+                        <segue destination="D35-2K-O3j" kind="relationship" relationship="viewControllers" id="dST-12-CyJ"/>
+                        <segue destination="TDT-xt-nad" kind="relationship" relationship="viewControllers" id="TiX-LS-Ppw"/>
+                        <segue destination="0iH-e9-N0A" kind="relationship" relationship="viewControllers" id="Bpq-IE-Kos"/>
+                        <segue destination="chV-O6-oLL" kind="relationship" relationship="viewControllers" id="mz0-5P-Ip8"/>
+                        <segue destination="XNz-lj-VST" kind="relationship" relationship="viewControllers" id="A9B-ib-boc"/>
+                        <segue destination="AHu-H3-NMU" kind="relationship" relationship="viewControllers" id="awH-70-kgE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xy-jZ-HnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1447.5" y="289.5"/>
+        </scene>
+        <!--备忘-->
+        <scene sceneID="aFd-y3-Zcv">
+            <objects>
+                <tableViewController id="XNz-lj-VST" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="GGq-Qh-7ue">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="sEC-Cf-bKU">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sEC-Cf-bKU" id="Gms-CQ-XEe">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XNz-lj-VST" id="QFb-ZC-Cwh"/>
+                            <outlet property="delegate" destination="XNz-lj-VST" id="fXx-as-THy"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="备忘" id="W24-ar-BWm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TL8-6i-zdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22.5" y="-345"/>
+        </scene>
+        <!--彩票-->
+        <scene sceneID="548-W7-gjY">
+            <objects>
+                <tableViewController id="TDT-xt-nad" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="axd-BZ-DKd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9PI-oJ-UPi">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9PI-oJ-UPi" id="L6A-ZB-9vc">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TDT-xt-nad" id="F0x-j9-jzg"/>
+                            <outlet property="delegate" destination="TDT-xt-nad" id="hq8-VX-9hs"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="彩票" id="D2m-VC-ZPp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6n-Qq-flF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2065.5" y="1044.75"/>
+        </scene>
+    </scenes>
+</document>
