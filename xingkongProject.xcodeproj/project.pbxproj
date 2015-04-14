@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB6651291AB85DB0002998DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6651281AB85DB0002998DA /* main.m */; };
+		DB66512C1AB85DB0002998DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66512B1AB85DB0002998DA /* AppDelegate.m */; };
+		DB66512F1AB85DB0002998DA /* xingkongProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB66512D1AB85DB0002998DA /* xingkongProject.xcdatamodeld */; };
+		DB6651321AB85DB0002998DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6651311AB85DB0002998DA /* ViewController.m */; };
+		DB6651351AB85DB0002998DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6651331AB85DB0002998DA /* Main.storyboard */; };
+		DB6651371AB85DB0002998DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6651361AB85DB0002998DA /* Images.xcassets */; };
+		DB66513A1AB85DB0002998DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB6651381AB85DB0002998DA /* LaunchScreen.xib */; };
+		DB6651461AB85DB0002998DA /* xingkongProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6651451AB85DB0002998DA /* xingkongProjectTests.m */; };
+		DB6651511AB9D329002998DA /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6651501AB9D329002998DA /* WeatherViewController.m */; };
+		DB6651541AB9DE20002998DA /* XingkongTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6651531AB9DE20002998DA /* XingkongTool.m */; };
+		DB74D47C1ABD855600BCBF0F /* MusicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74D47B1ABD855600BCBF0F /* MusicTableViewController.m */; };
+		DB74D4821ABD8C4A00BCBF0F /* MusicController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74D4811ABD8C4A00BCBF0F /* MusicController.m */; };
+		DB74D4851ABD971100BCBF0F /* musicItemDate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74D4841ABD971100BCBF0F /* musicItemDate.m */; };
+		DBE29AFF1AD2E2E200D06D84 /* MusicItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE29AFD1AD2E2E200D06D84 /* MusicItemTableViewCell.m */; };
+		DBE29B001AD2E2E200D06D84 /* MusicItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE29AFE1AD2E2E200D06D84 /* MusicItemTableViewCell.xib */; };
+		DBE4373D1AD5A11E00E588D9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE4373C1AD5A11E00E588D9 /* GameViewController.m */; };
+		DBE437791AD6BF9700E588D9 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE437781AD6BF9700E588D9 /* Test.xib */; };
+		DBE4377C1AD6D23200E588D9 /* MusicTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE4377B1AD6D23200E588D9 /* MusicTableHeadView.m */; };
+		DBE4377E1AD6D36400E588D9 /* MusicTableHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE4377D1AD6D36400E588D9 /* MusicTableHeadView.xib */; };
+		DBE437811ADD698000E588D9 /* LotteryTicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE437801ADD698000E588D9 /* LotteryTicketTableViewController.m */; };
+		DBE93E481ABDD16400722157 /* MusicLRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE93E471ABDD16400722157 /* MusicLRCViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB6651401AB85DB0002998DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB66511B1AB85DB0002998DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6651221AB85DB0002998DA;
+			remoteInfo = xingkongProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB6651231AB85DB0002998DA /* xingkongProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xingkongProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6651271AB85DB0002998DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6651281AB85DB0002998DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB66512A1AB85DB0002998DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB66512B1AB85DB0002998DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB66512E1AB85DB0002998DA /* xingkongProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = xingkongProject.xcdatamodel; sourceTree = "<group>"; };
+		DB6651301AB85DB0002998DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB6651311AB85DB0002998DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB6651341AB85DB0002998DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB6651361AB85DB0002998DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB6651391AB85DB0002998DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DB66513F1AB85DB0002998DA /* xingkongProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xingkongProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6651441AB85DB0002998DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6651451AB85DB0002998DA /* xingkongProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xingkongProjectTests.m; sourceTree = "<group>"; };
+		DB66514F1AB9D329002998DA /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherViewController.h; path = ViewItem/WeatherViewController.h; sourceTree = "<group>"; };
+		DB6651501AB9D329002998DA /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherViewController.m; path = ViewItem/WeatherViewController.m; sourceTree = "<group>"; };
+		DB6651521AB9DE20002998DA /* XingkongTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XingkongTool.h; path = ToolItem/XingkongTool.h; sourceTree = "<group>"; };
+		DB6651531AB9DE20002998DA /* XingkongTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XingkongTool.m; path = ToolItem/XingkongTool.m; sourceTree = "<group>"; };
+		DB74D47A1ABD855600BCBF0F /* MusicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicTableViewController.h; path = ViewItem/MusicTableViewController.h; sourceTree = "<group>"; };
+		DB74D47B1ABD855600BCBF0F /* MusicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicTableViewController.m; path = ViewItem/MusicTableViewController.m; sourceTree = "<group>"; };
+		DB74D4801ABD8C4A00BCBF0F /* MusicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicController.h; path = ToolItem/MusicController.h; sourceTree = "<group>"; };
+		DB74D4811ABD8C4A00BCBF0F /* MusicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicController.m; path = ToolItem/MusicController.m; sourceTree = "<group>"; };
+		DB74D4831ABD971100BCBF0F /* musicItemDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = musicItemDate.h; sourceTree = "<group>"; };
+		DB74D4841ABD971100BCBF0F /* musicItemDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = musicItemDate.m; sourceTree = "<group>"; };
+		DBE29AFC1AD2E2E200D06D84 /* MusicItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicItemTableViewCell.h; path = ViewItem/MusicItemTableViewCell.h; sourceTree = "<group>"; };
+		DBE29AFD1AD2E2E200D06D84 /* MusicItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicItemTableViewCell.m; path = ViewItem/MusicItemTableViewCell.m; sourceTree = "<group>"; };
+		DBE29AFE1AD2E2E200D06D84 /* MusicItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicItemTableViewCell.xib; path = ViewItem/MusicItemTableViewCell.xib; sourceTree = "<group>"; };
+		DBE4373B1AD5A11E00E588D9 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ViewItem/GameViewController.h; sourceTree = "<group>"; };
+		DBE4373C1AD5A11E00E588D9 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ViewItem/GameViewController.m; sourceTree = "<group>"; };
+		DBE437781AD6BF9700E588D9 /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
+		DBE4377A1AD6D23200E588D9 /* MusicTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicTableHeadView.h; path = ../../../xingkongProject/xingkongProject/xingkongProject/ViewItem/MusicTableHeadView.h; sourceTree = "<group>"; };
+		DBE4377B1AD6D23200E588D9 /* MusicTableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicTableHeadView.m; path = ../../../xingkongProject/xingkongProject/xingkongProject/ViewItem/MusicTableHeadView.m; sourceTree = "<group>"; };
+		DBE4377D1AD6D36400E588D9 /* MusicTableHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableHeadView.xib; sourceTree = "<group>"; };
+		DBE4377F1ADD698000E588D9 /* LotteryTicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LotteryTicketTableViewController.h; path = ViewItem/LotteryTicketTableViewController.h; sourceTree = "<group>"; };
+		DBE437801ADD698000E588D9 /* LotteryTicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LotteryTicketTableViewController.m; path = ViewItem/LotteryTicketTableViewController.m; sourceTree = "<group>"; };
+		DBE93E461ABDD16400722157 /* MusicLRCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicLRCViewController.h; path = ViewItem/MusicLRCViewController.h; sourceTree = "<group>"; };
+		DBE93E471ABDD16400722157 /* MusicLRCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicLRCViewController.m; path = ViewItem/MusicLRCViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6651201AB85DB0002998DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB66513C1AB85DB0002998DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB66511A1AB85DB0002998DA = {
+			isa = PBXGroup;
+			children = (
+				DBE437781AD6BF9700E588D9 /* Test.xib */,
+				DB6651251AB85DB0002998DA /* xingkongProject */,
+				DB6651421AB85DB0002998DA /* xingkongProjectTests */,
+				DB6651241AB85DB0002998DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6651241AB85DB0002998DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6651231AB85DB0002998DA /* xingkongProject.app */,
+				DB66513F1AB85DB0002998DA /* xingkongProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6651251AB85DB0002998DA /* xingkongProject */ = {
+			isa = PBXGroup;
+			children = (
+				DBE4377A1AD6D23200E588D9 /* MusicTableHeadView.h */,
+				DBE4377D1AD6D36400E588D9 /* MusicTableHeadView.xib */,
+				DBE4377B1AD6D23200E588D9 /* MusicTableHeadView.m */,
+				DB66512A1AB85DB0002998DA /* AppDelegate.h */,
+				DB66512B1AB85DB0002998DA /* AppDelegate.m */,
+				DB6651301AB85DB0002998DA /* ViewController.h */,
+				DB6651311AB85DB0002998DA /* ViewController.m */,
+				DB6651331AB85DB0002998DA /* Main.storyboard */,
+				DBE4377F1ADD698000E588D9 /* LotteryTicketTableViewController.h */,
+				DBE437801ADD698000E588D9 /* LotteryTicketTableViewController.m */,
+				DBE4373B1AD5A11E00E588D9 /* GameViewController.h */,
+				DBE4373C1AD5A11E00E588D9 /* GameViewController.m */,
+				DBE93E461ABDD16400722157 /* MusicLRCViewController.h */,
+				DBE93E471ABDD16400722157 /* MusicLRCViewController.m */,
+				DB74D47A1ABD855600BCBF0F /* MusicTableViewController.h */,
+				DB74D47B1ABD855600BCBF0F /* MusicTableViewController.m */,
+				DB74D4801ABD8C4A00BCBF0F /* MusicController.h */,
+				DB74D4811ABD8C4A00BCBF0F /* MusicController.m */,
+				DB6651361AB85DB0002998DA /* Images.xcassets */,
+				DBE29AFC1AD2E2E200D06D84 /* MusicItemTableViewCell.h */,
+				DBE29AFD1AD2E2E200D06D84 /* MusicItemTableViewCell.m */,
+				DBE29AFE1AD2E2E200D06D84 /* MusicItemTableViewCell.xib */,
+				DB6651381AB85DB0002998DA /* LaunchScreen.xib */,
+				DB66512D1AB85DB0002998DA /* xingkongProject.xcdatamodeld */,
+				DB6651261AB85DB0002998DA /* Supporting Files */,
+				DB66514F1AB9D329002998DA /* WeatherViewController.h */,
+				DB6651501AB9D329002998DA /* WeatherViewController.m */,
+				DB74D4831ABD971100BCBF0F /* musicItemDate.h */,
+				DB74D4841ABD971100BCBF0F /* musicItemDate.m */,
+				DB6651521AB9DE20002998DA /* XingkongTool.h */,
+				DB6651531AB9DE20002998DA /* XingkongTool.m */,
+			);
+			path = xingkongProject;
+			sourceTree = "<group>";
+		};
+		DB6651261AB85DB0002998DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB6651271AB85DB0002998DA /* Info.plist */,
+				DB6651281AB85DB0002998DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB6651421AB85DB0002998DA /* xingkongProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6651451AB85DB0002998DA /* xingkongProjectTests.m */,
+				DB6651431AB85DB0002998DA /* Supporting Files */,
+			);
+			path = xingkongProjectTests;
+			sourceTree = "<group>";
+		};
+		DB6651431AB85DB0002998DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB6651441AB85DB0002998DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6651221AB85DB0002998DA /* xingkongProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6651491AB85DB0002998DA /* Build configuration list for PBXNativeTarget "xingkongProject" */;
+			buildPhases = (
+				DB66511F1AB85DB0002998DA /* Sources */,
+				DB6651201AB85DB0002998DA /* Frameworks */,
+				DB6651211AB85DB0002998DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xingkongProject;
+			productName = xingkongProject;
+			productReference = DB6651231AB85DB0002998DA /* xingkongProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB66513E1AB85DB0002998DA /* xingkongProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB66514C1AB85DB0002998DA /* Build configuration list for PBXNativeTarget "xingkongProjectTests" */;
+			buildPhases = (
+				DB66513B1AB85DB0002998DA /* Sources */,
+				DB66513C1AB85DB0002998DA /* Frameworks */,
+				DB66513D1AB85DB0002998DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6651411AB85DB0002998DA /* PBXTargetDependency */,
+			);
+			name = xingkongProjectTests;
+			productName = xingkongProjectTests;
+			productReference = DB66513F1AB85DB0002998DA /* xingkongProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB66511B1AB85DB0002998DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = longhlb;
+				TargetAttributes = {
+					DB6651221AB85DB0002998DA = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8H48Q2DXR2;
+					};
+					DB66513E1AB85DB0002998DA = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = DB6651221AB85DB0002998DA;
+					};
+				};
+			};
+			buildConfigurationList = DB66511E1AB85DB0002998DA /* Build configuration list for PBXProject "xingkongProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB66511A1AB85DB0002998DA;
+			productRefGroup = DB6651241AB85DB0002998DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6651221AB85DB0002998DA /* xingkongProject */,
+				DB66513E1AB85DB0002998DA /* xingkongProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6651211AB85DB0002998DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6651351AB85DB0002998DA /* Main.storyboard in Resources */,
+				DBE437791AD6BF9700E588D9 /* Test.xib in Resources */,
+				DB66513A1AB85DB0002998DA /* LaunchScreen.xib in Resources */,
+				DBE29B001AD2E2E200D06D84 /* MusicItemTableViewCell.xib in Resources */,
+				DB6651371AB85DB0002998DA /* Images.xcassets in Resources */,
+				DBE4377E1AD6D36400E588D9 /* MusicTableHeadView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB66513D1AB85DB0002998DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB66511F1AB85DB0002998DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB74D47C1ABD855600BCBF0F /* MusicTableViewController.m in Sources */,
+				DB74D4821ABD8C4A00BCBF0F /* MusicController.m in Sources */,
+				DB6651541AB9DE20002998DA /* XingkongTool.m in Sources */,
+				DB74D4851ABD971100BCBF0F /* musicItemDate.m in Sources */,
+				DBE4377C1AD6D23200E588D9 /* MusicTableHeadView.m in Sources */,
+				DBE93E481ABDD16400722157 /* MusicLRCViewController.m in Sources */,
+				DBE4373D1AD5A11E00E588D9 /* GameViewController.m in Sources */,
+				DB66512C1AB85DB0002998DA /* AppDelegate.m in Sources */,
+				DB6651291AB85DB0002998DA /* main.m in Sources */,
+				DB6651321AB85DB0002998DA /* ViewController.m in Sources */,
+				DB6651511AB9D329002998DA /* WeatherViewController.m in Sources */,
+				DB66512F1AB85DB0002998DA /* xingkongProject.xcdatamodeld in Sources */,
+				DBE29AFF1AD2E2E200D06D84 /* MusicItemTableViewCell.m in Sources */,
+				DBE437811ADD698000E588D9 /* LotteryTicketTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB66513B1AB85DB0002998DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6651461AB85DB0002998DA /* xingkongProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB6651411AB85DB0002998DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6651221AB85DB0002998DA /* xingkongProject */;
+			targetProxy = DB6651401AB85DB0002998DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB6651331AB85DB0002998DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6651341AB85DB0002998DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB6651381AB85DB0002998DA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6651391AB85DB0002998DA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6651471AB85DB0002998DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6651481AB85DB0002998DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB66514A1AB85DB0002998DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = xingkongProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DB66514B1AB85DB0002998DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = xingkongProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DB66514D1AB85DB0002998DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = xingkongProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xingkongProject.app/xingkongProject";
+			};
+			name = Debug;
+		};
+		DB66514E1AB85DB0002998DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = xingkongProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xingkongProject.app/xingkongProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB66511E1AB85DB0002998DA /* Build configuration list for PBXProject "xingkongProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6651471AB85DB0002998DA /* Debug */,
+				DB6651481AB85DB0002998DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6651491AB85DB0002998DA /* Build configuration list for PBXNativeTarget "xingkongProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB66514A1AB85DB0002998DA /* Debug */,
+				DB66514B1AB85DB0002998DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB66514C1AB85DB0002998DA /* Build configuration list for PBXNativeTarget "xingkongProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB66514D1AB85DB0002998DA /* Debug */,
+				DB66514E1AB85DB0002998DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB66512D1AB85DB0002998DA /* xingkongProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB66512E1AB85DB0002998DA /* xingkongProject.xcdatamodel */,
+			);
+			currentVersion = DB66512E1AB85DB0002998DA /* xingkongProject.xcdatamodel */;
+			path = xingkongProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB66511B1AB85DB0002998DA /* Project object */;
+}
