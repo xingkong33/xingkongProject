@@ -8,6 +8,7 @@
 
 #import "LotteryTicketTableViewController.h"
 #import "XingkongTool.h"
+#import "SSQLotteryTableViewCell.h"
 @interface LotteryTicketTableViewController ()
 @property(nonatomic,strong)NSMutableArray *ssq;
 @property(nonatomic,strong)UIActivityIndicatorView *activity;
@@ -66,7 +67,8 @@
     if (!_ssq) {
         _ssq = [[NSMutableArray alloc]init];
     }
-    NSDictionary *josnDic=[XingkongTool loadJosn:@"http://f.opencai.net/utf-8/ssq-50.json"];
+//    NSDictionary *josnDic=[XingkongTool loadJosn:@"http://f.opencai.net/utf-8/ssq-50.json"];
+    NSDictionary *josnDic=[XingkongTool loadJosn:@"http://120.26.124.144:8080/utf-8/ssq-50.json"];
     for (id item in [josnDic objectForKey:@"data"]) {
         NSString *expect=[item objectForKey:@"expect"];
         NSString *opencode=[item objectForKey:@"opencode"];
@@ -91,7 +93,7 @@
 #pragma mark - Table view data source
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 90;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -103,12 +105,31 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static  NSString *cellName = @"SSQLotteryTableViewCell";
+    SSQLotteryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellName];
+    if (!cell) {
+        NSArray *tempArray = [[NSBundle mainBundle]loadNibNamed:cellName owner:nil options:nil];
+        cell = tempArray[0];
+    }
+    NSArray *tempData = [_ssq objectAtIndex:indexPath.row];
+    cell.countLabel.text = [NSString stringWithFormat:@"%@%@期",tempData[0],tempData[1]];
+    cell.moneyLabel.text = [NSString stringWithFormat:@"奖池： 金额获取失败"];
+    NSArray *buleBallArray = [[NSString stringWithFormat:@"%@",tempData[2]]componentsSeparatedByString:@","];
+    cell.blueBallOne.text = [NSString stringWithFormat:@"%@",buleBallArray[0]];
+    cell.blueBallTwo.text = [NSString stringWithFormat:@"%@",buleBallArray[1]];
+    cell.blueBallThree.text = [NSString stringWithFormat:@"%@",buleBallArray[2]];
+    cell.blueBallFour.text = [NSString stringWithFormat:@"%@",buleBallArray[3]];
+    cell.blueBallFive.text = [NSString stringWithFormat:@"%@",buleBallArray[4]];
+    cell.blueBallsix.text = [NSString stringWithFormat:@"%@",buleBallArray[5]];
+    cell.redBallLabel.text = [NSString stringWithFormat:@"%@",tempData[3]];
+    /*
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" ];
     if (!cell) {
                 cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     }
      NSArray *data = [_ssq objectAtIndex:[indexPath row]];
     cell.textLabel.text = [NSString stringWithFormat:@"%@期%@红：%@",data[1],data[2],data[3]];
+     */
     return cell;
 }
 

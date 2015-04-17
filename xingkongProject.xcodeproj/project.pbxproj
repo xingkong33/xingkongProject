@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB21BD061AE170310080D193 /* libALBB_OSS_IOS_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB21BD051AE170310080D193 /* libALBB_OSS_IOS_SDK.a */; };
 		DB6651291AB85DB0002998DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6651281AB85DB0002998DA /* main.m */; };
 		DB66512C1AB85DB0002998DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66512B1AB85DB0002998DA /* AppDelegate.m */; };
 		DB66512F1AB85DB0002998DA /* xingkongProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB66512D1AB85DB0002998DA /* xingkongProject.xcdatamodeld */; };
@@ -23,11 +24,12 @@
 		DBE29AFF1AD2E2E200D06D84 /* MusicItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE29AFD1AD2E2E200D06D84 /* MusicItemTableViewCell.m */; };
 		DBE29B001AD2E2E200D06D84 /* MusicItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE29AFE1AD2E2E200D06D84 /* MusicItemTableViewCell.xib */; };
 		DBE4373D1AD5A11E00E588D9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE4373C1AD5A11E00E588D9 /* GameViewController.m */; };
-		DBE437791AD6BF9700E588D9 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE437781AD6BF9700E588D9 /* Test.xib */; };
 		DBE4377C1AD6D23200E588D9 /* MusicTableHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE4377B1AD6D23200E588D9 /* MusicTableHeadView.m */; };
 		DBE4377E1AD6D36400E588D9 /* MusicTableHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE4377D1AD6D36400E588D9 /* MusicTableHeadView.xib */; };
 		DBE437811ADD698000E588D9 /* LotteryTicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE437801ADD698000E588D9 /* LotteryTicketTableViewController.m */; };
 		DBE93E481ABDD16400722157 /* MusicLRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE93E471ABDD16400722157 /* MusicLRCViewController.m */; };
+		DBEC263C1ADEE2B000478724 /* SSQLotteryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEC263A1ADEE2B000478724 /* SSQLotteryTableViewCell.m */; };
+		DBEC263D1ADEE2B000478724 /* SSQLotteryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEC263B1ADEE2B000478724 /* SSQLotteryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB21BD051AE170310080D193 /* libALBB_OSS_IOS_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libALBB_OSS_IOS_SDK.a; path = ../../../../Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Universal/libALBB_OSS_IOS_SDK.a; sourceTree = "<group>"; };
 		DB6651231AB85DB0002998DA /* xingkongProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xingkongProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6651271AB85DB0002998DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6651281AB85DB0002998DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		DBE29AFE1AD2E2E200D06D84 /* MusicItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MusicItemTableViewCell.xib; path = ViewItem/MusicItemTableViewCell.xib; sourceTree = "<group>"; };
 		DBE4373B1AD5A11E00E588D9 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ViewItem/GameViewController.h; sourceTree = "<group>"; };
 		DBE4373C1AD5A11E00E588D9 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ViewItem/GameViewController.m; sourceTree = "<group>"; };
-		DBE437781AD6BF9700E588D9 /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		DBE4377A1AD6D23200E588D9 /* MusicTableHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicTableHeadView.h; path = ../../../xingkongProject/xingkongProject/xingkongProject/ViewItem/MusicTableHeadView.h; sourceTree = "<group>"; };
 		DBE4377B1AD6D23200E588D9 /* MusicTableHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicTableHeadView.m; path = ../../../xingkongProject/xingkongProject/xingkongProject/ViewItem/MusicTableHeadView.m; sourceTree = "<group>"; };
 		DBE4377D1AD6D36400E588D9 /* MusicTableHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableHeadView.xib; sourceTree = "<group>"; };
@@ -78,6 +80,9 @@
 		DBE437801ADD698000E588D9 /* LotteryTicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LotteryTicketTableViewController.m; path = ViewItem/LotteryTicketTableViewController.m; sourceTree = "<group>"; };
 		DBE93E461ABDD16400722157 /* MusicLRCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicLRCViewController.h; path = ViewItem/MusicLRCViewController.h; sourceTree = "<group>"; };
 		DBE93E471ABDD16400722157 /* MusicLRCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicLRCViewController.m; path = ViewItem/MusicLRCViewController.m; sourceTree = "<group>"; };
+		DBEC26391ADEE2B000478724 /* SSQLotteryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSQLotteryTableViewCell.h; path = ViewItem/SSQLotteryTableViewCell.h; sourceTree = "<group>"; };
+		DBEC263A1ADEE2B000478724 /* SSQLotteryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSQLotteryTableViewCell.m; path = ViewItem/SSQLotteryTableViewCell.m; sourceTree = "<group>"; };
+		DBEC263B1ADEE2B000478724 /* SSQLotteryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SSQLotteryTableViewCell.xib; path = ViewItem/SSQLotteryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB21BD061AE170310080D193 /* libALBB_OSS_IOS_SDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +107,7 @@
 		DB66511A1AB85DB0002998DA = {
 			isa = PBXGroup;
 			children = (
-				DBE437781AD6BF9700E588D9 /* Test.xib */,
+				DB21BD051AE170310080D193 /* libALBB_OSS_IOS_SDK.a */,
 				DB6651251AB85DB0002998DA /* xingkongProject */,
 				DB6651421AB85DB0002998DA /* xingkongProjectTests */,
 				DB6651241AB85DB0002998DA /* Products */,
@@ -138,6 +144,9 @@
 				DB74D47B1ABD855600BCBF0F /* MusicTableViewController.m */,
 				DB74D4801ABD8C4A00BCBF0F /* MusicController.h */,
 				DB74D4811ABD8C4A00BCBF0F /* MusicController.m */,
+				DBEC26391ADEE2B000478724 /* SSQLotteryTableViewCell.h */,
+				DBEC263A1ADEE2B000478724 /* SSQLotteryTableViewCell.m */,
+				DBEC263B1ADEE2B000478724 /* SSQLotteryTableViewCell.xib */,
 				DB6651361AB85DB0002998DA /* Images.xcassets */,
 				DBE29AFC1AD2E2E200D06D84 /* MusicItemTableViewCell.h */,
 				DBE29AFD1AD2E2E200D06D84 /* MusicItemTableViewCell.m */,
@@ -263,11 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6651351AB85DB0002998DA /* Main.storyboard in Resources */,
-				DBE437791AD6BF9700E588D9 /* Test.xib in Resources */,
 				DB66513A1AB85DB0002998DA /* LaunchScreen.xib in Resources */,
 				DBE29B001AD2E2E200D06D84 /* MusicItemTableViewCell.xib in Resources */,
 				DB6651371AB85DB0002998DA /* Images.xcassets in Resources */,
 				DBE4377E1AD6D36400E588D9 /* MusicTableHeadView.xib in Resources */,
+				DBEC263D1ADEE2B000478724 /* SSQLotteryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +296,7 @@
 			files = (
 				DB74D47C1ABD855600BCBF0F /* MusicTableViewController.m in Sources */,
 				DB74D4821ABD8C4A00BCBF0F /* MusicController.m in Sources */,
+				DBEC263C1ADEE2B000478724 /* SSQLotteryTableViewCell.m in Sources */,
 				DB6651541AB9DE20002998DA /* XingkongTool.m in Sources */,
 				DB74D4851ABD971100BCBF0F /* musicItemDate.m in Sources */,
 				DBE4377C1AD6D23200E588D9 /* MusicTableHeadView.m in Sources */,
@@ -422,10 +432,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Zhu (G7V752EAXU)";
 				INFOPLIST_FILE = xingkongProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/longhlb/Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Release-iPhoneSimulator",
+					/Users/longhlb/Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Universal,
+					"/Users/longhlb/Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Release-iPhoneOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -435,10 +452,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Zhu (G7V752EAXU)";
 				INFOPLIST_FILE = xingkongProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/longhlb/Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Release-iPhoneSimulator",
+					/Users/longhlb/Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Universal,
+					"/Users/longhlb/Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Release-iPhoneOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

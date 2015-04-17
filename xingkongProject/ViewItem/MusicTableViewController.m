@@ -107,6 +107,7 @@
         }
         if ([self.songlist count])
         {
+            //百度外连
             if (!self.playController)
             {
                 self.playController = [MusicController getInstance];
@@ -196,6 +197,25 @@
                 [self.songlist addObject:musicItem];
             }
     }
+    //阿里运
+    if (!self.playController)
+    {
+        self.playController = [MusicController getInstance];
+        [self.playController setSongData:self.songlist];
+        //                [self.playController play:0];
+        
+        [self.tableView reloadData];
+        NSInteger *index = 0;
+        [self changeHeadViewData:index];
+        self.playController.delegate = self;
+        self.playController.upLRCSEL = @selector(upHeadRLCTime:currenTime:);
+        self.playController.upProgressSel=@selector(upHeadProgress:);
+        
+        NSUInteger temp[2] = {0,5};
+        NSIndexPath *indexPath = [NSIndexPath indexPathWithIndexes:temp length:2];
+        [self.tableView scrollToRowAtIndexPath: indexPath atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+    }
+
 }
 -(void)loadSongListData
 {
@@ -203,14 +223,20 @@
     void (^data)(NSDictionary *)= ^(NSDictionary *dic)
     {
         weakSelf.songListdata = dic;
-        dispatch_sync(dispatch_get_main_queue(), ^(){
-            [weakSelf songListInfo];
-            [weakSelf visibleActivity];
+        [weakSelf songListInfo];
+        [weakSelf visibleActivity];
+
+        if (weakSelf.view.window) {
+            dispatch_sync(dispatch_get_main_queue(), ^(){
+                
             [weakSelf viewDidLoad];});
+        }
+        
         
     };
-    [XingkongTool loadJosn:@"http://pan.plyz.net/d.asp?u=2214919116&p=musiclist.txt" callBack:data];
+//    [XingkongTool loadJosn:@"http://pan.plyz.net/d.asp?u=2214919116&p=music.txt " callBack:data];
     //    NSLog(@"%@",self.Weatherdata);
+    [XingkongTool loadJosnForCloud:@"/music.txt" callBack:data];
 }
 -(void)showActivity
 {

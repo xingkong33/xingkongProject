@@ -7,23 +7,21 @@
 //
 
 #import "GameViewController.h"
+////
 
+///
 @interface GameViewController ()
-
+{
+}
 @end
 
 @implementation GameViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    // Do any additional setup after loading the view.
-//    NSArray *libViewArray = [[NSBundle mainBundle]loadNibNamed:@"MusicTableHeadView" owner:self options:nil];
-//    MusicTableHeadView *tempHead = libViewArray[0];
-//    tempHead.backgroundColor = [UIColor blueColor];
-//    [self.view addSubview:tempHead.spriteView];
-//    [self.view addSubview:tempHead.bgImage];
    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

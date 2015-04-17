@@ -12,4 +12,5 @@
 +(NSDictionary *)loadJosn:(NSString *)url;
 +(void)loadJosn:(NSString *)url callBack:(void (^)(NSDictionary *dataDic))inBlock;
 +(void)downDataForASY:(NSString *)url saveto:(NSString *)savePath completeBack:(void(^)(BOOL *NoErr, NSData *downData))callBack;
++(void)loadJosnForCloud:(NSString *)fileName callBack:(void(^)(NSDictionary *))inBlock;
 @end

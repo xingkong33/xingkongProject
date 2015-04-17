@@ -76,7 +76,10 @@
         _lrcURL = lrcURL;
         [self.singerName setText:@" "];
         [self.songName setText:@" "];
-        NSString *songLrcName = [lrcURL substringFromIndex:[lrcURL rangeOfString:@"=" options:NSBackwardsSearch].location];
+        //百度外连
+//        NSString *songLrcName = [lrcURL substringFromIndex:[lrcURL rangeOfString:@"=" options:NSBackwardsSearch].location];
+        //新阿里云
+        NSString *songLrcName = [lrcURL substringFromIndex:[lrcURL rangeOfString:@"/" options:NSBackwardsSearch].location];
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *docDir = [paths objectAtIndex:0];
         NSString *loadSongLrcString  ;
@@ -233,7 +236,10 @@
 -(void)loadLRCdata:(NSString *)url
 {
     __weak MusicLRCViewController *weakSelf = self;
-    NSString *songLrcName = [url substringFromIndex:[url rangeOfString:@"=" options:NSBackwardsSearch].location];
+    //百度外连
+//    NSString *songLrcName = [url substringFromIndex:[url rangeOfString:@"=" options:NSBackwardsSearch].location];
+    //阿里云
+        NSString *songLrcName = [url substringFromIndex:[url rangeOfString:@"/" options:NSBackwardsSearch].location];
     __block NSString *saveSonglrcName = [songLrcName copy];
     NSURL *theLrcURL = [NSURL URLWithString:url];
     NSURLRequest *request=[NSURLRequest requestWithURL:theLrcURL];

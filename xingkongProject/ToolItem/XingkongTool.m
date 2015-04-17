@@ -7,7 +7,14 @@
 //
 
 #import "XingkongTool.h"
-
+///////
+#import "OSSClient.h"
+#import "OSSTool.h"
+#import "OSSData.h"
+#import "OSSLog.h"
+#import "ALBBOSSServiceProvider.h"
+#import "ALBBOSSServiceProtocol.h"
+///////
 @implementation XingkongTool
 +(NSDictionary *)loadJosn:(NSString *)url
 {
@@ -38,7 +45,10 @@
         //加载一个NSURL对象
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
         //将请求的url数据放到NSData对象中
-        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
+        if (error) {
+            NSLog(@"%@",error);
+        }
         //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
         NSDictionary *weatherDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingAllowFragments error:&error];
         if (error) {
@@ -54,6 +64,48 @@
     
     
         ;});
+}
++(void)loadJosnForCloud:(NSString *)fileName callBack:(void(^)(NSDictionary *))inBlock
+{
+    [self loadNSDataForMyCloud:fileName completeBack:^(bool *complete, NSData *downData) {
+        
+        if (complete)
+        {
+            NSError *err = Nil;
+            NSDictionary *josnDic = [NSJSONSerialization JSONObjectWithData:downData options:NSJSONReadingAllowFragments error:&err];
+            inBlock(josnDic);
+        }
+    }];
+}
++(void)loadNSDataForMyCloud:(NSString *)fileName completeBack:(void(^)(bool *,NSData *))callBack
+{
+    id<ALBBOSSServiceProtocol> ossService = [ALBBOSSServiceProvider getService];
+    NSString *accessKey = @"jq2ErEf71ReIhpxr";
+    NSString *secretKey = @"VSKvuvAoiVEQbC1vnt0Ie0z57kFDyh";
+    NSString *yourBucket = @"xingkongcloud";
+    NSString *yourKey = @"/musiclist.txt";
+    
+    [ossService setGenerateToken:^(NSString *method, NSString *md5, NSString *type, NSString *date, NSString *xoss, NSString *resource){
+        NSString *signature = nil;
+        NSString *content = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@%@", method, md5, type, date, xoss, resource];
+        signature = [OSSTool calBase64Sha1WithData:content withKey:secretKey];
+        signature = [NSString stringWithFormat:@"OSS %@:%@", accessKey, signature];
+        NSLog(@"here signature:%@", signature);
+        return signature;
+    }];
+    OSSBucket *bucket = [ossService getBucket:yourBucket];
+    [bucket setAcl:PUBLIC_READ];
+    [bucket setOssHostId:@"oss-cn-shenzhen.aliyuncs.com"];
+    [bucket setGenerateToken:nil];
+   OSSData *testData = [ossService getOSSDataWithBucket:bucket key:yourKey];
+    
+    NSError *error=nil;
+    NSData *yourData = [testData get:&error];
+    if (!error) {
+        callBack(YES,yourData);
+    }else{
+        callBack(NO,yourData);
+    }
 }
 +(void)downDataForASY:(NSString *)url saveto:(NSString *)savePath completeBack:(void (^)(BOOL *, NSData *))callBack
 {
