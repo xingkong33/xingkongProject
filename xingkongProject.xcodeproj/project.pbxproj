@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB21BD061AE170310080D193 /* libALBB_OSS_IOS_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB21BD051AE170310080D193 /* libALBB_OSS_IOS_SDK.a */; };
+		DB21BD1B1AE3F96E0080D193 /* MyWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB21BD1A1AE3F96E0080D193 /* MyWebViewController.m */; };
 		DB6651291AB85DB0002998DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6651281AB85DB0002998DA /* main.m */; };
 		DB66512C1AB85DB0002998DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB66512B1AB85DB0002998DA /* AppDelegate.m */; };
 		DB66512F1AB85DB0002998DA /* xingkongProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB66512D1AB85DB0002998DA /* xingkongProject.xcdatamodeld */; };
@@ -44,6 +45,25 @@
 
 /* Begin PBXFileReference section */
 		DB21BD051AE170310080D193 /* libALBB_OSS_IOS_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libALBB_OSS_IOS_SDK.a; path = ../../../../Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Universal/libALBB_OSS_IOS_SDK.a; sourceTree = "<group>"; };
+		DB21BD081AE3F5CA0080D193 /* ALBBOSSServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALBBOSSServiceProtocol.h; sourceTree = "<group>"; };
+		DB21BD091AE3F5CA0080D193 /* ALBBOSSServiceProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALBBOSSServiceProvider.h; sourceTree = "<group>"; };
+		DB21BD0A1AE3F5CA0080D193 /* libALBB_OSS_IOS_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libALBB_OSS_IOS_SDK.a; sourceTree = "<group>"; };
+		DB21BD0B1AE3F5CA0080D193 /* ListObjectOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListObjectOption.h; sourceTree = "<group>"; };
+		DB21BD0C1AE3F5CA0080D193 /* ListObjectResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListObjectResult.h; sourceTree = "<group>"; };
+		DB21BD0D1AE3F5CA0080D193 /* ObjectInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectInfo.h; sourceTree = "<group>"; };
+		DB21BD0E1AE3F5CA0080D193 /* OSSArgs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSArgs.h; sourceTree = "<group>"; };
+		DB21BD0F1AE3F5CA0080D193 /* OSSBucket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSBucket.h; sourceTree = "<group>"; };
+		DB21BD101AE3F5CA0080D193 /* OSSClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSClient.h; sourceTree = "<group>"; };
+		DB21BD111AE3F5CA0080D193 /* OSSData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSData.h; sourceTree = "<group>"; };
+		DB21BD121AE3F5CA0080D193 /* OSSFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSFile.h; sourceTree = "<group>"; };
+		DB21BD131AE3F5CA0080D193 /* OSSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSLog.h; sourceTree = "<group>"; };
+		DB21BD141AE3F5CA0080D193 /* OSSMeta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSMeta.h; sourceTree = "<group>"; };
+		DB21BD151AE3F5CA0080D193 /* OSSMultipart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSMultipart.h; sourceTree = "<group>"; };
+		DB21BD161AE3F5CA0080D193 /* OSSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSObject.h; sourceTree = "<group>"; };
+		DB21BD171AE3F5CA0080D193 /* OSSRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSRange.h; sourceTree = "<group>"; };
+		DB21BD181AE3F5CA0080D193 /* OSSTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSTool.h; sourceTree = "<group>"; };
+		DB21BD191AE3F96E0080D193 /* MyWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyWebViewController.h; path = ViewItem/MyWebViewController.h; sourceTree = "<group>"; };
+		DB21BD1A1AE3F96E0080D193 /* MyWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyWebViewController.m; path = ViewItem/MyWebViewController.m; sourceTree = "<group>"; };
 		DB6651231AB85DB0002998DA /* xingkongProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xingkongProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6651271AB85DB0002998DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6651281AB85DB0002998DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,9 +124,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB21BD071AE3F5CA0080D193 /* Universal */ = {
+			isa = PBXGroup;
+			children = (
+				DB21BD081AE3F5CA0080D193 /* ALBBOSSServiceProtocol.h */,
+				DB21BD091AE3F5CA0080D193 /* ALBBOSSServiceProvider.h */,
+				DB21BD0A1AE3F5CA0080D193 /* libALBB_OSS_IOS_SDK.a */,
+				DB21BD0B1AE3F5CA0080D193 /* ListObjectOption.h */,
+				DB21BD0C1AE3F5CA0080D193 /* ListObjectResult.h */,
+				DB21BD0D1AE3F5CA0080D193 /* ObjectInfo.h */,
+				DB21BD0E1AE3F5CA0080D193 /* OSSArgs.h */,
+				DB21BD0F1AE3F5CA0080D193 /* OSSBucket.h */,
+				DB21BD101AE3F5CA0080D193 /* OSSClient.h */,
+				DB21BD111AE3F5CA0080D193 /* OSSData.h */,
+				DB21BD121AE3F5CA0080D193 /* OSSFile.h */,
+				DB21BD131AE3F5CA0080D193 /* OSSLog.h */,
+				DB21BD141AE3F5CA0080D193 /* OSSMeta.h */,
+				DB21BD151AE3F5CA0080D193 /* OSSMultipart.h */,
+				DB21BD161AE3F5CA0080D193 /* OSSObject.h */,
+				DB21BD171AE3F5CA0080D193 /* OSSRange.h */,
+				DB21BD181AE3F5CA0080D193 /* OSSTool.h */,
+			);
+			name = Universal;
+			path = ../../../../Downloads/aliyun_ALBB_OSS_iOS_SDK_20150407/Universal;
+			sourceTree = "<group>";
+		};
 		DB66511A1AB85DB0002998DA = {
 			isa = PBXGroup;
 			children = (
+				DB21BD071AE3F5CA0080D193 /* Universal */,
 				DB21BD051AE170310080D193 /* libALBB_OSS_IOS_SDK.a */,
 				DB6651251AB85DB0002998DA /* xingkongProject */,
 				DB6651421AB85DB0002998DA /* xingkongProjectTests */,
@@ -134,6 +180,8 @@
 				DB6651301AB85DB0002998DA /* ViewController.h */,
 				DB6651311AB85DB0002998DA /* ViewController.m */,
 				DB6651331AB85DB0002998DA /* Main.storyboard */,
+				DB21BD191AE3F96E0080D193 /* MyWebViewController.h */,
+				DB21BD1A1AE3F96E0080D193 /* MyWebViewController.m */,
 				DBE4377F1ADD698000E588D9 /* LotteryTicketTableViewController.h */,
 				DBE437801ADD698000E588D9 /* LotteryTicketTableViewController.m */,
 				DBE4373B1AD5A11E00E588D9 /* GameViewController.h */,
@@ -297,6 +345,7 @@
 				DB74D47C1ABD855600BCBF0F /* MusicTableViewController.m in Sources */,
 				DB74D4821ABD8C4A00BCBF0F /* MusicController.m in Sources */,
 				DBEC263C1ADEE2B000478724 /* SSQLotteryTableViewCell.m in Sources */,
+				DB21BD1B1AE3F96E0080D193 /* MyWebViewController.m in Sources */,
 				DB6651541AB9DE20002998DA /* XingkongTool.m in Sources */,
 				DB74D4851ABD971100BCBF0F /* musicItemDate.m in Sources */,
 				DBE4377C1AD6D23200E588D9 /* MusicTableHeadView.m in Sources */,

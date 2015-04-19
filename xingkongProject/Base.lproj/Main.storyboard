@@ -428,6 +428,124 @@
             </objects>
             <point key="canvasLocation" x="-721.5" y="1044.75"/>
         </scene>
+        <!--网页-->
+        <scene sceneID="ikg-6A-PIZ">
+            <objects>
+                <viewController title="网页" id="TzS-bO-ZbZ" userLabel="网页" customClass="MyWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VCy-e2-wSL"/>
+                        <viewControllerLayoutGuide type="bottom" id="ae8-LW-xoh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EJC-OV-sL3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbX-mw-Cox">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spN-XB-X2N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oyQ-yI-YFv"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cjD-jx-UuO"/>
+                                    <barButtonItem systemItem="rewind" id="zl2-mD-aEo">
+                                        <connections>
+                                            <action selector="goBack:" destination="TzS-bO-ZbZ" id="2H0-9X-crH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0ra-bx-L7U"/>
+                                    <barButtonItem systemItem="fastForward" id="8c2-8a-ya6">
+                                        <connections>
+                                            <action selector="goForward:" destination="TzS-bO-ZbZ" id="0ee-my-NDN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Rhc-QA-rhN"/>
+                                    <barButtonItem style="plain" id="ha6-zX-crR">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="dZg-s4-Ypz">
+                                            <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hiZ-XO-wXH"/>
+                                    <barButtonItem systemItem="refresh" id="7dk-pU-IyN">
+                                        <connections>
+                                            <action selector="restWebView:" destination="TzS-bO-ZbZ" id="DUB-wC-5H5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="BHw-Km-KBn"/>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oyQ-yI-YFv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="oyQ-yI-YFv"/>
+                                    </mask>
+                                </variation>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VbX-mw-Cox" secondAttribute="trailing" id="6d6-Jp-RYJ"/>
+                            <constraint firstItem="spN-XB-X2N" firstAttribute="leading" secondItem="EJC-OV-sL3" secondAttribute="leading" id="AVU-Xl-eTj"/>
+                            <constraint firstItem="VbX-mw-Cox" firstAttribute="leading" secondItem="EJC-OV-sL3" secondAttribute="leading" id="NgQ-hi-a85"/>
+                            <constraint firstItem="spN-XB-X2N" firstAttribute="top" secondItem="VCy-e2-wSL" secondAttribute="bottom" constant="10" id="Nqt-fc-rXb">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="ae8-LW-xoh" firstAttribute="top" secondItem="VbX-mw-Cox" secondAttribute="bottom" id="WZ6-6H-FTE"/>
+                            <constraint firstAttribute="trailing" secondItem="spN-XB-X2N" secondAttribute="trailing" id="ivL-YV-c12"/>
+                            <constraint firstItem="VbX-mw-Cox" firstAttribute="top" secondItem="VCy-e2-wSL" secondAttribute="bottom" constant="30" id="n6s-vS-uu9">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VbX-mw-Cox"/>
+                                <exclude reference="spN-XB-X2N"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AVU-Xl-eTj"/>
+                                <exclude reference="Nqt-fc-rXb"/>
+                                <exclude reference="ivL-YV-c12"/>
+                                <exclude reference="6d6-Jp-RYJ"/>
+                                <exclude reference="NgQ-hi-a85"/>
+                                <exclude reference="n6s-vS-uu9"/>
+                                <exclude reference="WZ6-6H-FTE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VbX-mw-Cox"/>
+                                <include reference="spN-XB-X2N"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="AVU-Xl-eTj"/>
+                                <include reference="Nqt-fc-rXb"/>
+                                <include reference="ivL-YV-c12"/>
+                                <include reference="6d6-Jp-RYJ"/>
+                                <include reference="NgQ-hi-a85"/>
+                                <include reference="n6s-vS-uu9"/>
+                                <include reference="WZ6-6H-FTE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="7Y0-ty-8pD"/>
+                    <connections>
+                        <outlet property="webURLInpurt" destination="dZg-s4-Ypz" id="1Vl-0z-tDZ"/>
+                        <outlet property="webView" destination="VbX-mw-Cox" id="iwI-dQ-CK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goa-Ni-yYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.5" y="981"/>
+        </scene>
         <!--朋友圈-->
         <scene sceneID="Vxe-nJ-4V0">
             <objects>
@@ -512,6 +630,7 @@
                         <segue destination="chV-O6-oLL" kind="relationship" relationship="viewControllers" id="mz0-5P-Ip8"/>
                         <segue destination="XNz-lj-VST" kind="relationship" relationship="viewControllers" id="A9B-ib-boc"/>
                         <segue destination="AHu-H3-NMU" kind="relationship" relationship="viewControllers" id="awH-70-kgE"/>
+                        <segue destination="TzS-bO-ZbZ" kind="relationship" relationship="viewControllers" id="kdg-iy-61l"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xy-jZ-HnT" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -49,6 +49,7 @@
 {
     if ([MusicController getInstance].isplayIng) {
        
+        [self.playOrStopBut setStyle:UIBarButtonSystemItemPause];
         [self.playOrStopBut setImage:[UIImage imageNamed:@"暂停"]];
         
     }else

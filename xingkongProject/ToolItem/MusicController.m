@@ -29,7 +29,7 @@
     if (!Instance) {
         Instance = [self alloc];
         [[NSNotificationCenter defaultCenter]addObserver:Instance selector:@selector(playComplete:) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
-        Instance.debugValue=1;
+//        Instance.debugValue=1;
     }
    
     return Instance;
@@ -191,7 +191,7 @@
         }
 
         [[NSNotificationCenter defaultCenter]postNotificationName:@"upPlayButImage" object:nil];
-//        self.debugValue = 0;
+        self.debugValue = 0;
     }else
     {
         self.debugValue = 1;
@@ -211,7 +211,7 @@
                 self.onLinePlay = nil;
             }
         }
-//        self.debugValue = 0;
+        self.debugValue = 0;
     }else
     {
         self.debugValue = 1;
@@ -227,7 +227,7 @@
     if (self.debugValue) {
         NSInteger *tempIndex = (int)(self.playIngIndex+1+[self.songListArr count])%(int)[self.songListArr count];
         [self play:tempIndex];
-//        self.debugValue=0;
+        self.debugValue=0;
     }else
     {
         self.debugValue = 1;
@@ -239,7 +239,7 @@
     if (self.debugValue) {
         NSInteger *tempIndex = (int)(self.playIngIndex-1+[self.songListArr count])%(int)[self.songListArr count];
         [self play:tempIndex];
-//        self.debugValue = 0;
+        self.debugValue = 0;
     }else
     {
         self.debugValue = 1;

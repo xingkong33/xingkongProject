@@ -31,14 +31,28 @@
     if (self) {
         
         [self.tableView setBackgroundView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"背景"]]];
+//        NSArray *libViewArray = [[NSBundle mainBundle]loadNibNamed:@"MusicTableHeadView" owner:nil options:nil];
+//        self.HeadView = [libViewArray lastObject];
+//        self.HeadView.frame = CGRectMake(0, 130, self.view.frame.size.width, 103);
+//        self.HeadView.songNameLabel.text = @"";
+//        [self.HeadView.playProgress setProgress:0];
+//        self.tableView.tableHeaderView = self.HeadView;
+    }
+    return self;
+}
+-(void)awakeFromNib
+{
+    [super awakeFromNib];
+    if (self) {
+        
         NSArray *libViewArray = [[NSBundle mainBundle]loadNibNamed:@"MusicTableHeadView" owner:nil options:nil];
         self.HeadView = [libViewArray lastObject];
-        self.HeadView.frame = CGRectMake(0, 130, self.view.frame.size.width, 103);
+        self.HeadView.frame = CGRectMake(0, 0, self.view.frame.size.width, 103);
         self.HeadView.songNameLabel.text = @"";
         [self.HeadView.playProgress setProgress:0];
         self.tableView.tableHeaderView = self.HeadView;
     }
-    return self;
+
 }
 -(void)upHeadProgress:(NSNumber *)progress
 {
@@ -88,10 +102,7 @@
     }
 
 }
--(void)awakeFromNib
-{
-    NSLog(@"nib load complete");
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
